@@ -1,5 +1,4 @@
-# tryhackme_lab
-ixDamien
+# ixDamien
 
 
 ## my path  / my roadmap to follow.
