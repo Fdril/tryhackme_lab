@@ -11,7 +11,6 @@ NTFS is known as a journaling file system. In case of a failure, the file system
     Folder and file compression
     Encryption ( Encryption File System or EFS )
 
-
 On NTFS volumes, you can set permissions that grant or deny access to files and folders.
 The permissions are:
 
