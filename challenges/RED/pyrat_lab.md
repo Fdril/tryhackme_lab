@@ -157,7 +157,7 @@ then ***netcat***
 
 The name of the room gave us already a hint that python would be included to some degree. This confirms it. We can execute Python code. Trying some commands resulted in enumerating the system with basically those two commands:
 ``` print(os.listdir('/'))```\
-``` print(open('/<filename>', 'r').read()) ```\
+``` print(open('/filename', 'r').read()) ```\
 #### the explanation of the codes.
 firstline\
 
@@ -167,9 +167,40 @@ firstline\
     So os.listdir('/') returns something like:
     ['bin', 'boot', 'dev', 'etc', 'home', 'lib', ...]
     print(...) just outputs that list to the console.\
-Second line:
-```print(open('/<filename>', 'r').read())``
-    open(path, 'r') → Opens the file located at / <filename> in read mode ('r').
+<img width="614" height="196" alt="image" src="https://github.com/user-attachments/assets/45d97ed7-bb67-4ab0-b6a5-fcfd52118310" />\
+
+Second line: **we can do best and be checking through each dir. to know the files in each of them to know what we are up to**
+
+    print(open('/filename', 'r').read())
+    open(path, 'r') → Opens the file located at / <filename> in read mode ('r').\ filename of any of the above dir.
     .read() → Reads the entire file contents into memory.
-    print(...) → Prints that content to the console.```
+    print(...) → Prints that content to the console.\
+
+*** had to check each dir oen-by-one to know which one we can start with***\
+<img width="622" height="441" alt="image" src="https://github.com/user-attachments/assets/7b20f810-3deb-44fe-8b3f-db44ef04af80" />\
+/home is a dead end as it need permission.
+so\
+let's use var.\
+<img width="610" height="445" alt="image" src="https://github.com/user-attachments/assets/521f580d-c47e-49af-8e70-6cd6e1a16560" />\
+so , we found a e-mail in (/var/mail/think) ___ but there was nothing in (/var/mail/www-data) as it was empty.  
+#### let's continue to check the directories we might find some other useful stuffs.
+checking back on the email the letter was written by root_user.\
+From root@pyrat  Thu Jun 15 09:08:55 2023
+Return-Path: <root@pyrat>
+X-Original-To: think@pyrat
+Delivered-To: think@pyrat
+Received: by pyrat.localdomain (Postfix, from userid 0)
+        id 2E4312141; Thu, 15 Jun 2023 09:08:55 +0000 (UTC)
+Subject: Hello
+To: <think@pyrat>
+X-Mailer: mail (GNU Mailutils 3.7)
+Message-Id: <20230615090855.2E4312141@pyrat.localdomain>
+Date: Thu, 15 Jun 2023 09:08:55 +0000 (UTC)
+From: Dbile Admen <root@pyrat>
+Hello jose, I wanted to tell you that i have installed the RAT you posted on your GitHub page, i'll test it tonight so don't be scared if you see it running. Regards, Dbile Admen\
+
+
+
+
+
 
