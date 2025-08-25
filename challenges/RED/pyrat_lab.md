@@ -188,9 +188,7 @@ so\
 let's use var.\
 <img width="610" height="445" alt="image" src="https://github.com/user-attachments/assets/521f580d-c47e-49af-8e70-6cd6e1a16560" />\
 
-#### this sample .folder contain python execution code for nc 
-
-#### end
+#### [this sample .folder contain python execution code for nc](https://github.com/Fdril/tryhackme_lab/blob/main/challenges/RED/pyshellcodefornc.md)
 
 so , we found a e-mail in (/var/mail/think) ___ but there was nothing in (/var/mail/www-data) as it was empty.  
 #### let's continue to check the directories we might find some other useful stuffs.
