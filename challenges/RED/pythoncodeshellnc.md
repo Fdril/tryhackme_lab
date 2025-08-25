@@ -196,3 +196,60 @@ export TERM=xterm
 CTRL+Z
 stty raw -echo; fg
 ```
+
+
+
+# NAVIGATING DIRECTORY IN PYTHON like ls -la and for finding files too.
+
+In Python:
+
+* `"."` → current working directory
+* `".."` → parent directory
+* `"/something"` → absolute path from root
+
+Ahhh 👌 I see what happened — in the one-liner I gave, Python was only checking `os.path.isdir(f)` without the **full path**.
+
+When you run from `/home/pyrat`, and the code just checks `"etc"` instead of `"/etc"`, it will assume it’s a file (because it doesn’t exist relative to your current directory).
+
+---
+
+## 🔧 Corrected `ls -la` Equivalent (Pyrat Example)
+
+Use the **absolute path** in the check:
+
+### 1. For current working directory (`.`)
+
+```python
+import os; [print(f"{'DIR ' if os.path.isdir(os.path.join('.',f)) else 'FILE'}  {f}") for f in os.listdir('.')]
+```
+
+---
+
+### 2. For `/home`
+
+```python
+import os; [print(f"{'DIR ' if os.path.isdir(os.path.join('/home',f)) else 'FILE'}  {f}") for f in os.listdir('/home')]
+```
+
+---
+
+### 3. For `/home/pyrat`
+
+```python
+import os; [print(f"{'DIR ' if os.path.isdir(os.path.join('/home/pyrat',f)) else 'FILE'}  {f}") for f in os.listdir('/home/pyrat')]
+```
+
+---
+
+### 4. For `/root`
+
+```python
+import os; [print(f"{'DIR ' if os.path.isdir(os.path.join('/root',f)) else 'FILE'}  {f}") for f in os.listdir('/root')]
+```
+
+---
+
+### ✅ Example Expected Output in `/home/pyrat`
+<img width="598" height="558" alt="image" src="https://github.com/user-attachments/assets/0bed31c3-7d2c-42c0-8aa6-0cbeb94ce49b" />
+
+
