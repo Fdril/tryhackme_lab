@@ -154,6 +154,10 @@ then ***netcat***
 ```sudo nc 10.10.204.34 8000 -v```\
 <img width="468" height="136" alt="image" src="https://github.com/user-attachments/assets/409f6343-7a63-43ed-a1cc-763110b86831" />
 
+That service on port 8000 isn’t a normal shell.
+It’s a Python REPL (interpreter) exposed over TCP.
+
+That’s why when you typed ls, it said “name 'ls' is not defined” — because ls isn’t a Python command, it’s a Linux one.\
 
 The name of the room gave us already a hint that python would be included to some degree. This confirms it. We can execute Python code. Trying some commands resulted in enumerating the system with basically those two commands:
 ``` print(os.listdir('/'))```\
