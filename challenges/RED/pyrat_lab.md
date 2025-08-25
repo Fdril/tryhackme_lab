@@ -175,17 +175,18 @@ The name of the room gave us already a hint that python would be included to som
 
 Second line: **we can do best and be checking through each dir. to know the files in each of them to know what we are up to**
 
-    print(open('/filename', 'r').read())
-    open(path, 'r') → Opens the file located at / <filename> in read mode ('r').\ filename of any of the above dir.
-    .read() → Reads the entire file contents into memory.
-    print(...) → Prints that content to the console.\
-
 *** had to check each dir one-by-one to know which one we can start with***\
 
 <img width="622" height="441" alt="image" src="https://github.com/user-attachments/assets/7b20f810-3deb-44fe-8b3f-db44ef04af80" />\
 /home is a dead end as it need permission.
 so\
 let's use var.\
+
+    print(open('/var/mail/think', 'r').read())
+    open(path, 'r') → Opens the file located at / <filename> in read mode ('r').\ filename of any of the above dir.
+    .read() → Reads the entire file contents into memory.
+    print(...) → Prints that content to the console.\
+
 <img width="610" height="445" alt="image" src="https://github.com/user-attachments/assets/521f580d-c47e-49af-8e70-6cd6e1a16560" />\
 
 #### 1. [bash execution code for nc](https://github.com/Fdril/tryhackme_lab/blob/main/challenges/RED/pyshellcodefornc.md)
@@ -207,6 +208,8 @@ Message-Id: <20230615090855.2E4312141@pyrat.localdomain>
 Date: Thu, 15 Jun 2023 09:08:55 +0000 (UTC)
 From: Dbile Admen <root@pyrat>
 Hello jose, I wanted to tell you that i have installed the RAT you posted on your GitHub page, i'll test it tonight so don't be scared if you see it running. Regards, Dbile Admen\
+
+### NOW let's look for more info. in according to the email which made us know we have a .git file.
 
 
 
