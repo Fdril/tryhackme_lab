@@ -213,7 +213,7 @@ When you run from `/home/pyrat`, and the code just checks `"etc"` instead of `"/
 
 ---
 
-## 🔧 Corrected `ls -la` Equivalent (Pyrat Example)
+## `ls -la` Equivalent (Python)
 
 Use the **absolute path** in the check:
 
@@ -249,7 +249,10 @@ import os; [print(f"{'DIR ' if os.path.isdir(os.path.join('/root',f)) else 'FILE
 
 ---
 
-### ✅ Example Expected Output in `/home/pyrat`
-<img width="598" height="558" alt="image" src="https://github.com/user-attachments/assets/0bed31c3-7d2c-42c0-8aa6-0cbeb94ce49b" />
+### output should be like this.
+<img width="598" height="558" alt="image" src="https://github.com/user-attachments/assets/0bed31c3-7d2c-42c0-8aa6-0cbeb94ce49b" />\
+
+<img width="621" height="230" alt="image" src="https://github.com/user-attachments/assets/2a65c73a-7f43-4e25-853d-71d56300b986" />
+
 
 
