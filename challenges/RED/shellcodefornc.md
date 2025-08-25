@@ -1,4 +1,4 @@
-# PYTHON CODE FOR SHELL EXECUTION in netcat
+# PYTHON/BASH CODE FOR SHELL EXECUTION in netcat
 
 * That service on port `8000` isn’t a normal shell.
 * It’s a **Python REPL (interpreter)** exposed over TCP.
