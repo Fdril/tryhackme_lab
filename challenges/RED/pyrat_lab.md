@@ -162,8 +162,8 @@ That’s why when you typed ls, it said “name 'ls' is not defined” — becau
 The name of the room gave us already a hint that python would be included to some degree. This confirms it. We can execute Python code. Trying some commands resulted in enumerating the system with basically those two commands:
 ``` print(os.listdir('/'))```\
 ``` print(open('/filename', 'r').read()) ```\
-#### the explanation of the codes.
-firstline\
+#### navigating in the nc shell
+
 
     print(os.listdir('/'))
     os.listdir(path) → Lists all files and directories in the given path.
@@ -180,12 +180,18 @@ Second line: **we can do best and be checking through each dir. to know the file
     .read() → Reads the entire file contents into memory.
     print(...) → Prints that content to the console.\
 
-*** had to check each dir oen-by-one to know which one we can start with***\
+*** had to check each dir one-by-one to know which one we can start with***\
+
 <img width="622" height="441" alt="image" src="https://github.com/user-attachments/assets/7b20f810-3deb-44fe-8b3f-db44ef04af80" />\
 /home is a dead end as it need permission.
 so\
 let's use var.\
 <img width="610" height="445" alt="image" src="https://github.com/user-attachments/assets/521f580d-c47e-49af-8e70-6cd6e1a16560" />\
+
+#### this sample .folder contain python execution code for nc 
+
+#### end
+
 so , we found a e-mail in (/var/mail/think) ___ but there was nothing in (/var/mail/www-data) as it was empty.  
 #### let's continue to check the directories we might find some other useful stuffs.
 checking back on the email the letter was written by root_user.\
