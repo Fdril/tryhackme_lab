@@ -214,30 +214,30 @@ Hello jose, I wanted to tell you that i have installed the RAT you posted on you
 
 #### Finding the config file.
 #### STEP 1. using print to see the files in each folder as they advanced , but only seeing it from the /root dir.  
-``` print(os.listdir('/'))```
+``` print(os.listdir('/'))```\
 ['lib', 'boot', 'sbin', 'var', 'lib32', 'media', 'libx32', 'proc', 'etc', 'lost+found', 'opt', 'tmp', 'sys', 'srv', 'home', 'run', 'mnt', 'root', 'dev', 'swap.img', 'usr', 'bin', 'lib64']
 
 
-``` print(os.listdir('/opt'))```
+``` print(os.listdir('/opt'))```\
 ['dev']
 
 
-```print(os.listdir('/opt/dev'))```
+```print(os.listdir('/opt/dev'))```\
 ['.git']
 
 
-```print(os.listdir('/opt/dev/.git'))```
+```print(os.listdir('/opt/dev/.git'))```\
 ['objects', 'COMMIT_EDITMSG', 'HEAD', 'description', 'hooks', 'config', 'info', 'logs', 'branches', 'refs', 'index']
 
 
 #### i can either do everything from the /root dir while i will need to be specifying the path i want to work with or i can use "chdir" to change dir to the place i want to work.\
 
-```print(os.getcwd())```
+```print(os.getcwd())```\
 /root
 
-```os.chdir('/opt/dev/.git')```
-*** to confirm where we are after using chdir***  
-print(os.getcwd())
+```os.chdir('/opt/dev/.git')```\
+*** to confirm where we are after using chdir***\
+print(os.getcwd())\
 /opt/dev/.git
 
 
