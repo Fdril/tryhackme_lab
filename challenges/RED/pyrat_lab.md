@@ -213,7 +213,9 @@ Hello jose, I wanted to tell you that i have installed the RAT you posted on you
 
 
 #### Finding the config file.
-#### STEP 1. using print to see the files in each folder as they advanced , but only seeing it from the /root dir.  
+#### STEP 1. using print to see the files in each folder as they advanced , but only seeing it from the /root dir.  \
+<img width="611" height="271" alt="image" src="https://github.com/user-attachments/assets/40eb9ca4-0478-41ea-9da9-3732466931d9" />\
+
 ``` print(os.listdir('/'))```\
 ['lib', 'boot', 'sbin', 'var', 'lib32', 'media', 'libx32', 'proc', 'etc', 'lost+found', 'opt', 'tmp', 'sys', 'srv', 'home', 'run', 'mnt', 'root', 'dev', 'swap.img', 'usr', 'bin', 'lib64']
 
@@ -236,12 +238,23 @@ Hello jose, I wanted to tell you that i have installed the RAT you posted on you
 /root
 
 ```os.chdir('/opt/dev/.git')```\
-*** to confirm where we are after using chdir***\
+***to confirm where we are after using chdir***\
 print(os.getcwd())\
 /opt/dev/.git
 
 
-***now i want to print all the files and dir in this .git current file. in this process i will not need to write the path i will just replace it with (.)***
+***now i want to print all the files and dir in this .git current file. in this process i will not need to write the path i will just replace it with (.)***\
+```[print(f"{'DIR ' if os.path.isdir(os.path.join('.',f)) else 'FILE'}  {f}") for f in os.listdir('.')]```
+
+<img width="597" height="253" alt="image" src="https://github.com/user-attachments/assets/53ec8f18-8c24-4a07-89b5-cf2239e6264a" />
+
+***to open the config file i used the open()***\
+```print(open('config','r').read())```
+
+
+<img width="356" height="312" alt="image" src="https://github.com/user-attachments/assets/3d9e310a-07ca-474a-a26b-37878fd6e8ad" />
+
+
 
 
 
