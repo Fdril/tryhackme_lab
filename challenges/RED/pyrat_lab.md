@@ -249,9 +249,7 @@ print(os.getcwd())\
 <img width="597" height="253" alt="image" src="https://github.com/user-attachments/assets/53ec8f18-8c24-4a07-89b5-cf2239e6264a" />
 
 ***to open the config file i used the open()***\
-```print(open('config','r').read())```
-
-
+```print(open('config','r').read())```\
 <img width="356" height="312" alt="image" src="https://github.com/user-attachments/assets/3d9e310a-07ca-474a-a26b-37878fd6e8ad" />
 
 
