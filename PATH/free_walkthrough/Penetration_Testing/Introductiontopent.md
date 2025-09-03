@@ -2,7 +2,7 @@
 
 # CONSIST OF TWO MODULES
 
-# first module [pentesting fundamentals](https://github.com/Fdril/tryhackme_lab/blob/main/PATH/free_walkthrough/Penetration_Testing/pentest_fundamentals.md)
+# first Module [pentesting fundamentals](https://github.com/Fdril/tryhackme_lab/blob/main/PATH/free_walkthrough/Penetration_Testing/pentest_fundamentals.md)
 
-# second [principles of security](#)
+# second Module[principles of security](https://github.com/Fdril/tryhackme_lab/blob/main/PATH/free_walkthrough/Penetration_Testing/principlesofsecurity.md)
 
