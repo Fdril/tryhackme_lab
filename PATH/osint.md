@@ -1,5 +1,5 @@
 # OSINT - Open Source INTelligence
-# [osintbadge](https://tryhackme.com/ixDamien/badges/ohsint)
+# [MYOsintbadge](https://tryhackme.com/ixDamien/badges/ohsint)
 ## OBJ - Get as much information from a particular image.
 
 
