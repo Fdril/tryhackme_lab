@@ -1,8 +1,8 @@
 # ixDamien
 
 
-## my path  / my roadmap to follow.
-🛤️ PHASE 1: Foundations (Grounding Your Core Skills)
+## TRIP to mastery in Penetration Testing.
+🛤️ PHASE 1: Foundations (Grounding my Core Skills)
 
 Even hackers need strong basics. Don’t skip this.
 🔹 1. Computer Networking (Master this)
