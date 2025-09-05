@@ -2,6 +2,7 @@
 # [osintbadge](https://tryhackme.com/ixDamien/badges/ohsint)
 ## OBJ - Get as much information from a particular image.
 
+
 ### Using [exiftool](https://github.com/exiftool/exiftool#)
 ``` exiftool WindowsXP.jpg``` 
 gave so much information about the image such as the copyright/author , GPS location and so on.
