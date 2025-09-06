@@ -23,4 +23,10 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________________________________________________________
 # ENUMERATING TARGETS.
-<img width="526" height="223" alt="image" src="https://github.com/user-attachments/assets/4f88e854-e091-4113-b4fa-e8a861859575" />
+this nmap command will attempt a reverse-DNS resolution on all target within the subnet with their name.
+<img width="526" height="223" alt="image" src="https://github.com/user-attachments/assets/4f88e854-e091-4113-b4fa-e8a861859575" />  
+to scan ip address within longer range, I guess without knowing the subnet e.g **10.10.10.4** and i don't know the subnet.
+let me use **10.10.0-255.0-255**
+``` nmap -sL 10.10.0-255.101-125 ``` or otherwise using ``` nmap -sL -n 10.10.0-255.101-125   ``` to scan without DNS-server.  
+<img width="536" height="317" alt="image" src="https://github.com/user-attachments/assets/e3aeb3ff-71b9-4c6d-b122-e1b167fb5e7a" />
+
